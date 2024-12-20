@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: User Management System
+  version: 1.0.0
+
+servers:
+  url: http://localhost:3000/user
+
+paths:
+  /user:
+    get:
+      summary: Returns list of users.
+      responses:
+        "200":
+  
+  /user/create:
+    post:
+      summary: Adds new user.
+      responses:
+        "200"
+
+/user/update:
+    put:
+      summary: Updates existing user.
+      responses:
+        "200"
+
+/user/delete:
+    delete:
+      summary: Deletes existing user.
+      responses:
+        "200"
