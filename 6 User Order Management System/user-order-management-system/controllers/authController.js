@@ -93,7 +93,7 @@ exports.refresh = (req, res, next) => {
             console.log(error);
             res.status(400).json({message:'Invalid Token.'});
         }
-        res.status(400).json({message: "Token is not valid"});
+        //res.status(400).json({message: "Token is not valid"});
     } else {
         res.status(401).json({message: "No token, access denied"});
     }
